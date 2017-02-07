@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Y7-qE-Oap">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Y7-qE-Oap">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bio View Controller-->
         <scene sceneID="mZf-5w-y9F">
             <objects>
-                <viewController id="8H9-Pb-fie" sceneMemberID="viewController">
+                <viewController id="8H9-Pb-fie" customClass="BioViewController" customModule="Bruce_Decker_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DjN-mr-cah"/>
                         <viewControllerLayoutGuide type="bottom" id="S4I-9R-KbS"/>
@@ -29,9 +29,35 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Danish" translatesAutoresizingMaskIntoConstraints="NO" id="RRe-gx-9MP">
-                                <rect key="frame" x="54" y="150" width="122" height="118"/>
+                                <rect key="frame" x="46" y="150" width="122" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Agent Smith" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-3w-tfB">
+                                <rect key="frame" x="46" y="382" width="138" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bruce Decker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdU-qT-Seg">
+                                <rect key="frame" x="204" y="436" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPX-b3-Tjg">
+                                <rect key="frame" x="204" y="474" width="127" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBN-lZ-YB2">
+                                <rect key="frame" x="16" y="304" width="79" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Captain_America_Shield"/>
+                                <connections>
+                                    <action selector="Marvel_Shield:" destination="8H9-Pb-fie" eventType="touchUpInside" id="cwg-xf-3mN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -42,6 +68,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PP8-Av-MiF"/>
+                    <connections>
+                        <outlet property="Bruce_Bio" destination="RPX-b3-Tjg" id="w5l-6p-eL9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rm-eu-tmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,31 +156,60 @@
                                     <constraint firstAttribute="width" constant="375" id="yfi-DM-mHv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
-                                <color key="textColor" red="0.89352071823179935" green="1" blue="0.49132130234911031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.39737196130000002" blue="0.401274348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUm-0T-EoX">
-                                <rect key="frame" x="0.0" y="329" width="375" height="290"/>
+                            <visualEffectView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXg-e2-y97">
+                                <rect key="frame" x="0.0" y="314" width="375" height="304"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="g1Q-DQ-UlP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="290" id="OjE-bK-MSM"/>
-                                    <constraint firstAttribute="width" constant="375" id="SZg-xw-08B"/>
+                                    <constraint firstAttribute="height" constant="304" id="9ck-d4-V7h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.89352071823179935" green="1" blue="0.49132130234911031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c7S-Dx-GUY">
+                                <rect key="frame" x="0.0" y="329" width="375" height="290"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUm-0T-EoX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="9BI-C4-BMQ"/>
+                                            <constraint firstAttribute="height" constant="290" id="OjE-bK-MSM"/>
+                                            <constraint firstAttribute="width" constant="375" id="SZg-xw-08B"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="290" id="ggB-FO-Zyd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.89352071823179935" green="1" blue="0.49132130234911031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LUm-0T-EoX" secondAttribute="bottom" id="6Yz-SA-DEt"/>
+                                    <constraint firstItem="LUm-0T-EoX" firstAttribute="leading" secondItem="c7S-Dx-GUY" secondAttribute="leading" id="HlS-mY-8g8"/>
+                                    <constraint firstItem="LUm-0T-EoX" firstAttribute="centerX" secondItem="c7S-Dx-GUY" secondAttribute="centerX" id="UNu-kc-Zzr"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUm-0T-EoX" secondAttribute="trailing" id="fsw-Jx-aEg"/>
+                                    <constraint firstItem="LUm-0T-EoX" firstAttribute="leading" secondItem="c7S-Dx-GUY" secondAttribute="leading" id="nR4-dQ-bqg"/>
+                                    <constraint firstItem="LUm-0T-EoX" firstAttribute="centerX" secondItem="c7S-Dx-GUY" secondAttribute="centerX" id="wZY-z5-JxN"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c7S-Dx-GUY" secondAttribute="trailing" id="3z5-hK-kLP"/>
                             <constraint firstItem="Zce-fc-BO1" firstAttribute="leading" secondItem="cK1-Vt-BSm" secondAttribute="leading" id="5Ja-35-gtZ"/>
-                            <constraint firstAttribute="trailing" secondItem="LUm-0T-EoX" secondAttribute="trailing" id="6lI-FR-CHF"/>
+                            <constraint firstItem="c7S-Dx-GUY" firstAttribute="top" secondItem="Zce-fc-BO1" secondAttribute="bottom" constant="216" id="9zs-cg-Yh5"/>
+                            <constraint firstItem="c7S-Dx-GUY" firstAttribute="leading" secondItem="cK1-Vt-BSm" secondAttribute="leading" id="B4S-oA-oTJ"/>
                             <constraint firstAttribute="trailing" secondItem="Zce-fc-BO1" secondAttribute="trailing" id="KOV-Oh-feA"/>
-                            <constraint firstAttribute="bottom" secondItem="LUm-0T-EoX" secondAttribute="bottom" constant="48" id="Ovd-Eg-Su5"/>
                             <constraint firstItem="7o6-7m-xcX" firstAttribute="top" secondItem="cK1-Vt-BSm" secondAttribute="top" constant="64" id="U2E-ke-Wu2"/>
                             <constraint firstItem="Zce-fc-BO1" firstAttribute="top" secondItem="cK1-Vt-BSm" secondAttribute="top" constant="64" id="V1i-0t-Z93"/>
                             <constraint firstItem="7o6-7m-xcX" firstAttribute="leading" secondItem="cK1-Vt-BSm" secondAttribute="leading" id="krb-me-Wos"/>
-                            <constraint firstItem="LUm-0T-EoX" firstAttribute="leading" secondItem="cK1-Vt-BSm" secondAttribute="leading" id="uay-gS-nQE"/>
+                            <constraint firstItem="xXg-e2-y97" firstAttribute="trailing" secondItem="7o6-7m-xcX" secondAttribute="trailing" id="qOf-xd-qMg"/>
+                            <constraint firstItem="xXg-e2-y97" firstAttribute="leading" secondItem="c7S-Dx-GUY" secondAttribute="leading" id="t5Z-RQ-9bw"/>
                             <constraint firstAttribute="trailing" secondItem="7o6-7m-xcX" secondAttribute="trailing" id="yT9-sW-Gmk"/>
+                            <constraint firstItem="xXg-e2-y97" firstAttribute="bottom" secondItem="oZw-Hu-zJN" secondAttribute="top" id="ysC-N8-Ib0"/>
                             <constraint firstAttribute="bottom" secondItem="7o6-7m-xcX" secondAttribute="bottom" constant="49" id="ywg-Kr-iAE"/>
                         </constraints>
                     </view>
@@ -165,11 +223,11 @@
             </objects>
             <point key="canvasLocation" x="3040.8000000000002" y="142.57871064467767"/>
         </scene>
-        <!--Heros-->
+        <!--Navigation Controller-->
         <scene sceneID="q6e-fT-mL3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kpi-KN-caT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Heros" id="Ike-Pu-gzo"/>
+                    <tabBarItem key="tabBarItem" title="" image="Iron Man Filled-50" id="Ike-Pu-gzo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dIB-Ul-XKJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -190,6 +248,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Y7-qE-Oap" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7Et-BE-3mv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -202,11 +261,11 @@
             </objects>
             <point key="canvasLocation" x="-95" y="-240"/>
         </scene>
-        <!--Heros-->
+        <!--Navigation Controller-->
         <scene sceneID="SW9-ik-Gwe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bk1-xH-sU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Heros" id="0O0-Rw-KvT"/>
+                    <tabBarItem key="tabBarItem" title="" image="Brutus Filled-50" id="0O0-Rw-KvT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5r-r9-Yz5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -223,7 +282,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Agent Smith" width="375" height="360"/>
+        <image name="Brutus Filled-50" width="50" height="50"/>
+        <image name="Captain_America_Shield" width="1832" height="1832"/>
         <image name="Danish" width="512" height="512"/>
+        <image name="Iron Man Filled-50" width="50" height="50"/>
         <image name="Marvel" width="500" height="888"/>
     </resources>
 </document>
