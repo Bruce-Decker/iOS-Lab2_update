@@ -64,6 +64,18 @@ class MyTableViewController: UITableViewController {
         
         cell.cellItemName?.text = Comic_Characters[indexPath.row]
         cell.cellImage?.image = Comic_Images[indexPath.row]
+        if Comic_Checked[indexPath.row] {
+            cell.accessoryType = .checkmark
+        }
+        else {
+            cell.accessoryType = .none
+            
+            // todoAlert = UIAlertController(title: selectedItem, message: "Reset", preferredStyle: UIAlertControllerStyle.alert)
+        }
+
+        
+        
+        
         // Configure the cell...
 
         return cell
