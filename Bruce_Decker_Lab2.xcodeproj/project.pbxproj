@@ -13,6 +13,7 @@
 		EB4C212A1E4319B200852FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4C21291E4319B200852FBE /* Assets.xcassets */; };
 		EB4C212D1E4319B200852FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C212B1E4319B200852FBE /* LaunchScreen.storyboard */; };
 		EB4C21351E431AEF00852FBE /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C21341E431AEF00852FBE /* MyTableViewController.swift */; };
+		EB9F24481E497567002D17E8 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F24471E497567002D17E8 /* BioViewController.swift */; };
 		EBB6C9861E49324F007AB836 /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB6C9851E49324F007AB836 /* MyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		EB4C212C1E4319B200852FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4C212E1E4319B200852FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4C21341E431AEF00852FBE /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		EB9F24471E497567002D17E8 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		EBB6C9851E49324F007AB836 /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			children = (
 				EB4C21221E4319B200852FBE /* AppDelegate.swift */,
 				EB4C21261E4319B200852FBE /* Main.storyboard */,
+				EB9F24471E497567002D17E8 /* BioViewController.swift */,
 				EBB6C9851E49324F007AB836 /* MyDetailViewController.swift */,
 				EB1D9A9F1E43E88A006C84A0 /* MyTableViewCell.swift */,
 				EB4C21291E4319B200852FBE /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				EB4C21351E431AEF00852FBE /* MyTableViewController.swift in Sources */,
 				EB1D9AA01E43E88A006C84A0 /* MyTableViewCell.swift in Sources */,
 				EBB6C9861E49324F007AB836 /* MyDetailViewController.swift in Sources */,
+				EB9F24481E497567002D17E8 /* BioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
