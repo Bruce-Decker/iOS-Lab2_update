@@ -10,8 +10,6 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-
-    
     var Comic_Characters = ["Ant Man", "Black Widow", "Captain America","Deadpool", "Dr. Doom", "Dr. Strange", "Falcon", "Hawkeye", "Hulk", "Iron Man", "Loki", "Magneto", "Quicksilver", "Red Skull", "Scarlet Witch", "Spider Man", "Thor", "Ultron", "Winter Soldier", "Wolverine"]
     
     
@@ -32,6 +30,7 @@ class MyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -77,7 +76,6 @@ class MyTableViewController: UITableViewController {
         
         
         // Configure the cell...
-
         return cell
     }
     

@@ -37,6 +37,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.53158670663833618" green="0.073164023458957672" blue="0.13885676860809326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" id="bBi-6X-1lg">
+                            <rect key="frame" x="0.0" y="168" width="375" height="382"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="140" id="jVA-ax-Fg1" customClass="MyTableViewCell" customModule="Bruce_Decker_Lab2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="140"/>
@@ -57,6 +63,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.53158670659999996" green="0.073164023460000005" blue="0.13885676860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellImage" destination="9Dz-nK-6yA" id="bCp-si-bqe"/>
@@ -135,11 +142,11 @@
             </objects>
             <point key="canvasLocation" x="3040.8000000000002" y="142.57871064467767"/>
         </scene>
-        <!--Item-->
+        <!--Heros-->
         <scene sceneID="q6e-fT-mL3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kpi-KN-caT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ike-Pu-gzo"/>
+                    <tabBarItem key="tabBarItem" title="Heros" id="Ike-Pu-gzo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dIB-Ul-XKJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -172,11 +179,11 @@
             </objects>
             <point key="canvasLocation" x="-95" y="-240"/>
         </scene>
-        <!--Item-->
+        <!--Villans-->
         <scene sceneID="SW9-ik-Gwe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bk1-xH-sU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0O0-Rw-KvT"/>
+                    <tabBarItem key="tabBarItem" title="Villans" id="0O0-Rw-KvT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5r-r9-Yz5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -192,4 +199,7 @@
             <point key="canvasLocation" x="1049" y="-534"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Marvel" width="500" height="888"/>
+    </resources>
 </document>
