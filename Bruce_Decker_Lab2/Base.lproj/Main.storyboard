@@ -73,7 +73,7 @@
                                             <rect key="frame" x="19" y="25" width="215" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="0.99698322230000003" blue="0.97901893210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Dz-nK-6yA">
@@ -202,11 +202,11 @@
             </objects>
             <point key="canvasLocation" x="-95" y="-240"/>
         </scene>
-        <!--Villans-->
+        <!--Heros-->
         <scene sceneID="SW9-ik-Gwe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bk1-xH-sU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Villans" id="0O0-Rw-KvT"/>
+                    <tabBarItem key="tabBarItem" title="Heros" id="0O0-Rw-KvT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5r-r9-Yz5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
