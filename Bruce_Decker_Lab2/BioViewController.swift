@@ -11,12 +11,10 @@ import UIKit
 class BioViewController: UIViewController {
     @IBOutlet var textView: UITextView!
    
-    @IBOutlet var Bruce_Bio: UILabel!
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        Bruce_Bio.text = "Hobbies: running, hiking, basketball"
 
         // Do any additional setup after loading the view.
     }
